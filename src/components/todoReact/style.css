@@ -6,6 +6,13 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #060822;
+}
 
 html {
   font-size: 62.5%;
@@ -15,8 +22,8 @@ html {
   min-height: 100vh;
   background: #060822;
   display: flex;
-  justify-content: center;
- 
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .child-div {
@@ -36,9 +43,7 @@ html {
   text-transform: capitalize;
 }
 
-
 input {
- 
   width: 30rem;
   height: 3.4rem;
   padding: 2rem 1.2rem;
@@ -74,9 +79,8 @@ input:focus {
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 }
 
-
-.addItems{
-  min-width:20rem;
+.addItems {
+  min-width: 20rem;
 }
 .todo-btn {
   width: 5rem;
@@ -137,7 +141,6 @@ input:focus {
 
 .fa-trash-alt,
 .fa-edit {
-  
   cursor: pointer;
   pointer-events: auto;
   z-index: 10;
@@ -154,8 +157,6 @@ input:focus {
 .fa-edit {
   margin-left: -3.5rem;
 }
-
-
 
 .eachItem:hover .fa-trash-alt {
   color: rgb(214, 47, 61);
